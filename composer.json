@@ -1,0 +1,27 @@
+{
+  "name": "bilberrry/chase-paymentech",
+  "description": "Chase Paymentech Orbital Gateway PHP Library",
+  "keywords": [
+    "chase",
+    "paymentech",
+    "payment processing"
+  ],
+  "homepage": "https://github.com/bilberrry/chase-paymentech",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alex Mukho",
+      "email": "alex@bilberrry.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0.8"
+  },
+  "autoload": {
+    "psr-4": { "bilberrry\\ChasePaymetech" : "src/" }
+  }
+}
