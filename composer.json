@@ -22,6 +22,6 @@
     "phpunit/phpunit": "~6.0.8"
   },
   "autoload": {
-    "psr-4": { "bilberrry\\ChasePaymetech" : "src/" }
+    "psr-4": { "bilberrry\\ChasePaymetech\\" : "src/" }
   }
 }
