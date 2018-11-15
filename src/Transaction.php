@@ -179,7 +179,7 @@ class Transaction {
      */
     public function setTransactionType($transaction_type = null)
     {
-        $this->transaction_type = (int)$transaction_type;
+        $this->transaction_type = $transaction_type;
 
         return $this;
     }
