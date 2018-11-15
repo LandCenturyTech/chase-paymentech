@@ -39,6 +39,10 @@ class Transaction {
      */
     protected $status = 0;
 
+    /**
+     * @var string
+     */
+    protected $transaction_type = 'A';
 
     /**
      * @return string
@@ -156,6 +160,26 @@ class Transaction {
     public function setStatus($status = null)
     {
         $this->status = (int)$status;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTransactionType()
+    {
+        return $this->transaction_type;
+    }
+
+    /**
+     * @param string $transaction_type
+     *
+     * @return $this
+     */
+    public function setTransactionType($transaction_type = null)
+    {
+        $this->transaction_type = (int)$transaction_type;
 
         return $this;
     }

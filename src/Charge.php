@@ -7,7 +7,7 @@ class Charge {
     public function create(CreditCard $card, Transaction $transaction)
     {
         return ['NewOrder', [
-            'MessageType' => 'AC',
+            'MessageType' => $transaction->getTransactionType(),
             'AccountNum' => $card->getCardNumber(),
             'Exp' => $card->getCardExpiry()->format('my'),
             'CurrencyCode' => 840,
